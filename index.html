@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator</title>
+    <link rel="stylesheet" href="style.css" class="">
+</head>
+<body>
+    <script src="script.js"></script>
+    <script>
+        document.write(data(2*7));
+        function data(a){
+            var v=3*3;
+            var a=;
+            var b=a+v;
+            return b;
+        }
+    </script>
+    <div class="container">
+        
+        <div id="changeColor" class="calculator">
+            <h2>Garo calculator</h2>
+            <div id="demo" class="output-section">
+                <input type="text" name="answer" id="output" value=""><br><br>
+
+            </div>
+            <div id="button-section"class="button-section">
+                <input type="button" class="number" value="1" onclick="output.value+='1'" id="id">
+                <input type="button" class="number" value="2" onclick="output.value+='2'" id="id">
+                <input type="button" class="number" value="3" onclick="output.value+='3'" id="id">
+                <input type="button" class="number" value="4" onclick="output.value+='4'" id="id">
+                <br><br>
+                <input type="button" class="number" value="5" onclick="output.value+='5'" id="id">
+                <input type="button" class="number" value="6" onclick="output.value+='6'" id="id">
+                <input type="button" class="number" value="7" onclick="output.value+='7'" id="id">
+                <input type="button" class="number" value="8" onclick="output.value+='8'" id="id">
+                <br><br>
+                <input type="button" class="number" value="9" onclick="output.value+='9'" id="id">
+                <input type="button" class="operator" value="-" onclick="output.value+='-'" id="id">
+                <input type="button" class="operator"value="*" onclick="output.value+='*'" id="id">
+                <input type="button" class="operator"value="+" onclick="output.value+='+'" id="id">
+                <br><br>
+                <input type="button" class="operator"value="0" onclick="output.value+='0'" id="id">
+                <input type="button" class="operator" value="=" onclick="output.value= eval(output.value)" id="id">
+                <input type="button" class="operator" value="Delete" onclick="output.value=''" id="id2">
+               
+                <br><br>
+                
+            </div>
+        </div>
+    </div>
+    <div id="demo">
+    <button id="changeMe">click me</button>
+    </div>
+</body>
+</html>
